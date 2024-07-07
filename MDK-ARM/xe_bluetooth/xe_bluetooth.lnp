@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"xe_bluetooth\startup_stm32f103xb.o"
+"xe_bluetooth\main.o"
+"xe_bluetooth\stm32f1xx_it.o"
+"xe_bluetooth\stm32f1xx_hal_msp.o"
+"xe_bluetooth\stm32f1xx_hal_gpio_ex.o"
+"xe_bluetooth\stm32f1xx_hal_tim.o"
+"xe_bluetooth\stm32f1xx_hal_tim_ex.o"
+"xe_bluetooth\stm32f1xx_hal.o"
+"xe_bluetooth\stm32f1xx_hal_rcc.o"
+"xe_bluetooth\stm32f1xx_hal_rcc_ex.o"
+"xe_bluetooth\stm32f1xx_hal_gpio.o"
+"xe_bluetooth\stm32f1xx_hal_dma.o"
+"xe_bluetooth\stm32f1xx_hal_cortex.o"
+"xe_bluetooth\stm32f1xx_hal_pwr.o"
+"xe_bluetooth\stm32f1xx_hal_flash.o"
+"xe_bluetooth\stm32f1xx_hal_flash_ex.o"
+"xe_bluetooth\stm32f1xx_hal_exti.o"
+"xe_bluetooth\stm32f1xx_hal_uart.o"
+"xe_bluetooth\system_stm32f1xx.o"
+"xe_bluetooth\motor_handle.o"
+"xe_bluetooth\motor_pwm.o"
+"xe_bluetooth\car_control.o"
+--strict --scatter "xe_bluetooth\xe_bluetooth.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "xe_bluetooth.map" -o xe_bluetooth\xe_bluetooth.axf
